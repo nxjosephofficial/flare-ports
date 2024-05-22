@@ -1,5 +1,5 @@
 PORTNAME=	flare
-DISTVERSION=	0.14.3
+DISTVERSION=	0.14.3-8-g6f29d50
 CATEGORIES=	net-im
 
 MAINTAINER=	mikael@FreeBSD.org
@@ -21,7 +21,7 @@ USE_GNOME=	gtksourceview5 gtk40 libadwaita
 
 USE_GITLAB=	yes
 GL_ACCOUNT=	schmiddi-on-mobile
-#GL_TAGNAME=	a5d5b6b3e3deadee0ddf458bfc726b82bafc9a6a
+GL_TAGNAME=	6f29d500f2c93854e6845450eabbcf3e42b7c9de
 
 MAKE_ENV+=	${CARGO_ENV}
 CARGO_BUILD=	no
