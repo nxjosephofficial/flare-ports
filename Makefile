@@ -13,7 +13,8 @@ BUILD_DEPENDS=	blueprint-compiler:devel/blueprint-compiler \
 		protoc:devel/protobuf
 LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libgdk_pixbuf-2.0.so:graphics/gdk-pixbuf2 \
-		libsecret-1.so:security/libsecret
+		libsecret-1.so:security/libsecret \
+		libconsolekit.so:sysutils/consolekit2
 RUN_DEPENDS=	gnome-keyring:security/gnome-keyring
 
 USES=		cargo desktop-file-utils gettext gnome meson pkgconfig
