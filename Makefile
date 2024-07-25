@@ -1,5 +1,5 @@
 PORTNAME=	flare
-DISTVERSION=	0.14.3-8-g6f29d50
+DISTVERSION=	0.15.0-629fa7a8
 CATEGORIES=	net-im
 
 MAINTAINER=	mikael@FreeBSD.org
@@ -13,8 +13,7 @@ BUILD_DEPENDS=	blueprint-compiler:devel/blueprint-compiler \
 		protoc:devel/protobuf
 LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libgdk_pixbuf-2.0.so:graphics/gdk-pixbuf2 \
-		libsecret-1.so:security/libsecret \
-		libconsolekit.so:sysutils/consolekit2
+		libsecret-1.so:security/libsecret
 RUN_DEPENDS=	gnome-keyring:security/gnome-keyring
 
 USES=		cargo desktop-file-utils gettext gnome meson pkgconfig
@@ -22,7 +21,7 @@ USE_GNOME=	gtksourceview5 gtk40 libadwaita
 
 USE_GITLAB=	yes
 GL_ACCOUNT=	schmiddi-on-mobile
-GL_TAGNAME=	6f29d500f2c93854e6845450eabbcf3e42b7c9de
+GL_TAGNAME=	629fa7a8a9fe164b6ad6c350cf5a08c995aa512e
 
 MAKE_ENV+=	${CARGO_ENV}
 CARGO_BUILD=	no
